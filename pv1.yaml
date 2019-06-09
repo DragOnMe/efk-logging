@@ -9,4 +9,4 @@ spec:
   accessModes:
     - ReadWriteOnce #type of access
   hostPath:
-    path: "/mnt/data" #host location
+    path: "/mnt/data/efk01" #host location
