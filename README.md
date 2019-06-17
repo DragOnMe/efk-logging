@@ -6,7 +6,9 @@ EFKK
 ### Prerequisites
 
 * A working kubernetes 1.14.x + with multiple nodes
-* kubectl is required
+* Kubectl is required
+* Assumption: Hostnames are kube-1, kube-2, kube-3, ..., etc
+* Runs without specific storage-class(uses hostPath for persistent volume)
 
 
 ### Installing
@@ -70,6 +72,8 @@ green  open   logstash-2019.06.09          cml31JzXTRW8egY9QxcyiQ   5   1     18
 ```
 
 ## Teardown
+
+Caution: This will clear the EFKK and all the data on ES.
 
 ```bash
 $ ./teardown.sh
